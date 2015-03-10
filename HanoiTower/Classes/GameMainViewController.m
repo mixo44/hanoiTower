@@ -7,8 +7,17 @@
 //
 
 #import "GameMainViewController.h"
+#import "Defines.h"
+
 
 @interface GameMainViewController ()
+
+@property(strong, nonatomic) IBOutlet UISlider *mConutSlider;
+@property(strong, nonatomic) IBOutlet UILabel *mNumberOfRingsLabel;
+@property(strong, nonatomic) IBOutlet UIButton *mStartButton;
+
+
+- (void) sliderValueChanged:(UISlider *) slider;
 
 @end
 
@@ -16,7 +25,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [_mConutSlider addTarget:self
+                      action:@selector(sliderValueChanged:)
+            forControlEvents:UIControlEventValueChanged];
+    [self sliderValueChanged:_mConutSlider];
+    
+    [_mStartButton.layer setCornerRadius:10];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +40,39 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void) viewWillAppear:(BOOL)animated {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSUInteger countOfRings = [[userDefaults valueForKey:kCountOfRings] integerValue];
+    
+    if (countOfRings < 1) {
+        countOfRings = 1;
+    }
+    
+    [_mConutSlider setValue:countOfRings];
+    [self sliderValueChanged:_mConutSlider];
 }
-*/
+
+- (IBAction)startButtonHandler:(UIButton *)sender {
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    [userDefaults setValue:[NSNumber numberWithUnsignedInt:_mConutSlider.value] forKey:kCountOfRings];
+    [userDefaults synchronize];
+    
+    [self performSegueWithIdentifier:@"GameViewSegue" sender:self];
+    
+    
+}
+
+
+#pragma mark - Slider Value
+- (void) sliderValueChanged:(UISlider *) slider {
+    
+    NSInteger ronundedNumber = (long)roundf(slider.value);
+    [slider setValue:ronundedNumber animated:NO];
+    [_mNumberOfRingsLabel setText:[NSString stringWithFormat:@"Number of Rings: %li", (long)ronundedNumber]];
+    
+}
+
 
 @end

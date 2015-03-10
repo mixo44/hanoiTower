@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		C6C8114C1AAC222400799716 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C8114B1AAC222400799716 /* main.m */; };
 		C6C8114F1AAC222400799716 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C8114E1AAC222400799716 /* AppDelegate.m */; };
-		C6C811521AAC222400799716 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C811511AAC222400799716 /* ViewController.m */; };
 		C6C811551AAC222400799716 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C811531AAC222400799716 /* Main.storyboard */; };
 		C6C811571AAC222400799716 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C811561AAC222400799716 /* Images.xcassets */; };
-		C6C8115A1AAC222400799716 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6C811581AAC222400799716 /* LaunchScreen.xib */; };
 		C6C811661AAC222400799716 /* HanoiTowerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C811651AAC222400799716 /* HanoiTowerTests.m */; };
+		C6C811701AAC224A00799716 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C8116F1AAC224A00799716 /* Default-568h@2x.png */; };
+		C6C811741AAC22AD00799716 /* GameMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C811731AAC22AD00799716 /* GameMainViewController.m */; };
+		C6C811781AAC32F000799716 /* PlayGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C811771AAC32F000799716 /* PlayGameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,17 @@
 		C6C8114B1AAC222400799716 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C6C8114D1AAC222400799716 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C6C8114E1AAC222400799716 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C6C811501AAC222400799716 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C6C811511AAC222400799716 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C6C811541AAC222400799716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6C811561AAC222400799716 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C6C811591AAC222400799716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C6C8115F1AAC222400799716 /* HanoiTowerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HanoiTowerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6C811641AAC222400799716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6C811651AAC222400799716 /* HanoiTowerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HanoiTowerTests.m; sourceTree = "<group>"; };
+		C6C8116F1AAC224A00799716 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C6C811721AAC22AD00799716 /* GameMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameMainViewController.h; path = Classes/GameMainViewController.h; sourceTree = "<group>"; };
+		C6C811731AAC22AD00799716 /* GameMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameMainViewController.m; path = Classes/GameMainViewController.m; sourceTree = "<group>"; };
+		C6C811751AAC318800799716 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		C6C811761AAC32F000799716 /* PlayGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayGameViewController.h; path = Classes/PlayGameViewController.h; sourceTree = "<group>"; };
+		C6C811771AAC32F000799716 /* PlayGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayGameViewController.m; path = Classes/PlayGameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 		C6C8113D1AAC222400799716 = {
 			isa = PBXGroup;
 			children = (
+				C6C8116F1AAC224A00799716 /* Default-568h@2x.png */,
 				C6C811481AAC222400799716 /* HanoiTower */,
 				C6C811621AAC222400799716 /* HanoiTowerTests */,
 				C6C811471AAC222400799716 /* Products */,
@@ -81,13 +86,12 @@
 		C6C811481AAC222400799716 /* HanoiTower */ = {
 			isa = PBXGroup;
 			children = (
+				C6C811711AAC227B00799716 /* Classes */,
 				C6C8114D1AAC222400799716 /* AppDelegate.h */,
 				C6C8114E1AAC222400799716 /* AppDelegate.m */,
-				C6C811501AAC222400799716 /* ViewController.h */,
-				C6C811511AAC222400799716 /* ViewController.m */,
 				C6C811531AAC222400799716 /* Main.storyboard */,
+				C6C811751AAC318800799716 /* Defines.h */,
 				C6C811561AAC222400799716 /* Images.xcassets */,
-				C6C811581AAC222400799716 /* LaunchScreen.xib */,
 				C6C811491AAC222400799716 /* Supporting Files */,
 			);
 			path = HanoiTower;
@@ -117,6 +121,17 @@
 				C6C811641AAC222400799716 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6C811711AAC227B00799716 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C6C811721AAC22AD00799716 /* GameMainViewController.h */,
+				C6C811731AAC22AD00799716 /* GameMainViewController.m */,
+				C6C811761AAC32F000799716 /* PlayGameViewController.h */,
+				C6C811771AAC32F000799716 /* PlayGameViewController.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +215,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6C811551AAC222400799716 /* Main.storyboard in Resources */,
-				C6C8115A1AAC222400799716 /* LaunchScreen.xib in Resources */,
 				C6C811571AAC222400799716 /* Images.xcassets in Resources */,
+				C6C811701AAC224A00799716 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6C811521AAC222400799716 /* ViewController.m in Sources */,
+				C6C811741AAC22AD00799716 /* GameMainViewController.m in Sources */,
 				C6C8114F1AAC222400799716 /* AppDelegate.m in Sources */,
+				C6C811781AAC32F000799716 /* PlayGameViewController.m in Sources */,
 				C6C8114C1AAC222400799716 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,14 +266,6 @@
 				C6C811541AAC222400799716 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C6C811581AAC222400799716 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C6C811591AAC222400799716 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -344,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HanoiTower/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HanoiTower/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +422,7 @@
 				C6C8116B1AAC222400799716 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6C8116C1AAC222400799716 /* Build configuration list for PBXNativeTarget "HanoiTowerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +431,7 @@
 				C6C8116E1AAC222400799716 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
