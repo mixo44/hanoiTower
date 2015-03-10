@@ -243,30 +243,6 @@
 
 - (IBAction)menuButtonHandler:(UIButton *)sender {
     
-    /*[self removeConstraintsFromDraggingView];
-    
-    [self.view removeConstraints: [_mDraggingView constraints]];
-    
-    [self.view addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:[_mDraggingView(==height)]-(0)-[last]" options: 0 metrics: @{@"height":@(ringsHeight)} views: @{@"last":[_mSecondColumnStack objectAtIndex: 0],@"_mDraggingView":_mDraggingView}]];
-
-    [self.view addConstraint:[NSLayoutConstraint
-                              constraintWithItem: [_mSecondColumnStack objectAtIndex: 0]
-                              attribute:NSLayoutAttributeTop
-                              relatedBy:NSLayoutRelationEqual
-                              toItem:_mDraggingView
-                              attribute:NSLayoutAttributeBottom
-                              multiplier:1.0f
-                              constant:0.f]];
-    
-    [self.view addConstraint:[NSLayoutConstraint
-                              constraintWithItem: [_mSecondColumnStack lastObject]
-                              attribute: NSLayoutAttributeCenterX
-                              relatedBy: NSLayoutRelationEqual
-                              toItem:_mDraggingView
-                              attribute: NSLayoutAttributeCenterX
-                              multiplier: 1.0f
-                              constant: 0.0f]];*/
-    
     [UIView animateWithDuration:0.3 animations:^{
         _mMenuButton.alpha = 0;
     }];
